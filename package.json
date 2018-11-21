@@ -1,0 +1,41 @@
+{
+  "name": "metadata-coding-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge for book processing related roles. Please complete the challenge and send it back within 24 hours, either a zip of the source code or a link to the git repository.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nyc mocha --exit tests/book.spec.js",
+    "lint": "eslint *.js"
+  },
+  "bin": {
+    "gutenport": "bin/importCache.js"
+  },
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biblio-tech/metadata-coding-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biblio-tech/metadata-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/biblio-tech/metadata-coding-challenge#readme",
+  "dependencies": {
+    "read-glob": "^3.0.0",
+    "sequelize": "^4.41.2",
+    "sqlite3": "^4.0.4",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-eslint": "^5.0.1",
+    "eslint-plugin-node": "^8.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
